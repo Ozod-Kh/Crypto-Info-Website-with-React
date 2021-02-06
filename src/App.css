@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search {
+	width: 450px;
+	margin: auto;
+	margin-bottom: 100px;
+	margin-top: 15px;
+}
+.header {
+	font-size: 44px;
+}
+.search input {
+	width: 100%;
+	border-radius: 50px;
+	height: 40px;
+	border: none;
+	padding-left: 40px;
+	outline: none;
+	margin-top: 40px;
+	background-image: linear-gradient(to right, rgba(121, 231, 245, 0.322), rgba(166, 43, 197, 0.623));
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+	background-color: rgb(20, 7, 7);
+	color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container {
+	display: flex;
+	justify-content: center;
+}
+.coinInfo {
+	display: flex;
+	flex-direction: row;
+	justify-items: start;
+	align-items: center;
+	height: 80px;
+	width: 900px;
+	border-bottom: 1px solid #d7d7d7;
 }
 
-.App-link {
-  color: #61dafb;
+.coinInfo h1 {
+	font-size: 18px;
+	width: 150px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.basic {
+	display: flex;
+	align-items: center;
+	padding-right: 24px;
+	min-width: 300px;
+	justify-content: space-around;
+}
+
+.basic img {
+	height: 30px;
+	width: 30px;
+	margin-right: 10px;
+}
+
+.details {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	width: 100%;
+}
+
+.red {
+	color: red;
+}
+.green {
+	color: lime;
+}
+
+.price {
+	width: 110px;
+}
+
+@media only screen and (max-width: 600px) {
+	.coinInfo {
+		width: 400px;
+		justify-content: space-between;
+	}
+
+	.coinInfo h1 {
+		font-size: 16px;
+		width: 90px;
+	}
+	.search {
+		width: 350px;
+	}
+
+	.basic {
+		width: 150px;
+		padding-left: 0px;
+	}
+	.basic h1 {
+		padding-left: -5px;
+	}
+
+	.header {
+		font-size: 32px;
+	}
 }
