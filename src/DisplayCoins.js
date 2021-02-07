@@ -15,7 +15,7 @@ return (
               <h1>{name}</h1>
 
               <p>{symbol.toUpperCase()}</p>
-              
+
             </div>
 
             <div className='details'>
@@ -25,7 +25,7 @@ return (
                     <p className='red'>{price_change_percentage_24h.toFixed(2)} %</p> )
                      :  (<p className='green'>{price_change_percentage_24h.toFixed(2)} %</p>)
                 } 
-                <p>Mrt Cap: {market_cap.toLocaleString()}</p>
+                <p>Mrt Cap: ${market_cap.toLocaleString()}</p>
             </div>
               
           </div>
